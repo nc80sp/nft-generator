@@ -47,7 +47,7 @@ export default function MintNFTApp() {
         image: `${url}` // 任意の画像URL
       };
 
-      const json = JSON.stringify(metadata);
+      const json = JSON.stringify(metadata); 
       const encoded = `data:application/json;base64,${btoa(unescape(encodeURIComponent(json)))}`;
 
       const tx = await contract.mintNFT(walletAddress, encoded);
