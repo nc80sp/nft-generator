@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 const ethers = require("ethers")
 
 const CONTRACT_ADDRESS = "0x5A4a43EF859ab33840b674a254Ed1AD3d4eed5d0";
