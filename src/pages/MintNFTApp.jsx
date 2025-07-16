@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const ethers = require("ethers")
-const CONTRACT_ADDRESS = '0xa0a2f191b9289623c1c33dd18a63fb7ad94fde10'; // あなたのNFTコントラクトアドレスに置き換えてください
+const CONTRACT_ADDRESS = '0x5A4a43EF859ab33840b674a254Ed1AD3d4eed5d0'; // あなたのNFTコントラクトアドレスに置き換えてください
 const CONTRACT_ABI = [
   "function mintNFT(address recipient, string memory tokenURI) public returns (uint256)"
 ];
@@ -60,7 +60,8 @@ export default function MintNFTApp() {
 
   return (
     <div className="max-w-md mx-auto p-6 bg-white shadow-md rounded-xl text-center">
-      <h2 className="text-xl font-bold mb-4">NFT学生証をミントしよう！</h2>
+	<h1>NFT発行ページ</h1>
+	  <h2 className="text-xl font-bold mb-4">NFT学生証をミントしよう！</h2>
       <button onClick={connectWallet} className="bg-blue-500 text-white px-4 py-2 rounded mb-4">
         ウォレットを接続する
       </button>
